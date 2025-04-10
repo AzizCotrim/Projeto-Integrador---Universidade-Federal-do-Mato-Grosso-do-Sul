@@ -11,12 +11,12 @@
     
     <div class="sidebar">
         <h4>Menu</h4>
-        <a href="#">Início</a>
-        <a href="#">Fazer Pedido</a>
-        <a href="#">Lista de Pedidos</a>
+        <a href="#" class="menu-item" data-target="pagina-inicial">Início</a>
+        <a href="#" class="menu-item" data-target="pedido">Fazer Pedido</a>
+        <a href="#" class="menu-item" data-target="lista-pedidos">Lista de Pedidos</a>
     </div><!--sidebar-->
 
-    <section class="content pagina-inicial hidden">
+    <section class="content pagina-inicial">
         <div class="container cont-init">
             <div class="cabecalho">
                 <h1>Bem vindo ao Café Gostoso</h1>
@@ -33,7 +33,7 @@
         </div><!--container-->
     </section><!--content-->
 
-    <section class="content hidden">
+    <section class="content pedido hidden">
         <div class="container">
             <div class="cabecalho w-100">
                 <h1>Pedido</h1>
@@ -89,7 +89,7 @@
         </div><!--container-->
     </section><!--content-->
 
-    <section class="content lista-pedidos ">
+    <section class="content lista-pedidos hidden">
         <div class="container">
             <div class="cabecalho cab-pedidos w-100">
                 <h1>Lista de Pedidos</h1>
@@ -135,5 +135,19 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-item').click(function (e) {
+                e.preventDefault();
+    
+                $('.content').addClass('hidden');
+    
+                const target = $(this).data('target');
+    
+                $('.' + target).removeClass('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
