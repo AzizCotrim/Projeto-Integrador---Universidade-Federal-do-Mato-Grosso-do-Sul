@@ -10,6 +10,9 @@ body {
 }
 
 .sidebar {
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
     width: 250px;
     background-color: #343a40;
     padding: 20px;
@@ -28,7 +31,35 @@ body {
     background-color: #495057;
 }
 
+/*Conteudo principal - Pagina inicial*/
+
 .content {
     flex-grow: 1;
     padding: 20px;
+    margin-left: 250px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2%;
+    align-items: center; 
+}
+
+.cabecalho{
+    text-align: center;
+    padding: 20px 0;
+}
+
+p.descricao-projeto{
+    width: 60%;
+    text-align: justify;
+}
+
+.image{
+    background-color: black;
+    width: 60%;
+    height: 300px;
 }
