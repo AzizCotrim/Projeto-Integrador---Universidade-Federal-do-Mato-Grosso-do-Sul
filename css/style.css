@@ -31,7 +31,7 @@ body {
     background-color: #495057;
 }
 
-/*Conteudo principal - Pagina inicial*/
+/*Gerais*/
 
 .content {
     flex-grow: 1;
@@ -40,13 +40,19 @@ body {
     
 }
 
+.hidden{
+    display: none;
+}
+
 .container{
     display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 0 2%;
+    flex-direction: column;
     align-items: center; 
 }
+
+/*Conteudo principal - Pagina inicial*/
 
 .cabecalho{
     text-align: center;
@@ -63,3 +69,22 @@ p.descricao-projeto{
     width: 60%;
     height: 300px;
 }
+
+/*Conteudo principal - Pagina de Pedido*/
+
+form{
+    background-color: #343a40;
+    width: 60%;
+    padding: 20px 2%;
+    color: white;
+    border-radius: 10px;
+}
+
+form textarea{
+    resize: none;
+}
+
+.Valor-total{
+    margin-top: 50px;
+}
+
