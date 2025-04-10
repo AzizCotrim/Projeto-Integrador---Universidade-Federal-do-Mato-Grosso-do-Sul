@@ -33,15 +33,14 @@
         </div><!--container-->
     </section><!--content-->
 
-    <section class="content pagina-pedidos">
+    <section class="content hidden">
         <div class="container">
             <div class="cabecalho w-100">
-                <h1>Fazer Pedido</h1>
+                <h1>Pedido</h1>
                 <h5></h5>
             </div><!--cabecalho-->
 
             <form>
-
                 <div class="row align-items-center mb-3">
                     <div class="col-4">
                       <label for="opcao" class="form-label mb-0">Bebida:</label>
@@ -86,11 +85,53 @@
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Concluir Pedido</button>
                   </div>
-            
             </form>
-
         </div><!--container-->
     </section><!--content-->
+
+    <section class="content lista-pedidos ">
+        <div class="container">
+            <div class="cabecalho cab-pedidos w-100">
+                <h1>Lista de Pedidos</h1>
+            </div><!--cabecalho-->
+            <div class="box-pedidos d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">Pedido #1</h6>
+                        <p class="mb-0 opacity-75">3x Pingado</p>
+                        <p class="mb-0 opacity-75">5x Coxinhas</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">Pedido #2</h6>
+                        <p class="mb-0 opacity-75">1x Café Preto</p>
+                        <p class="mb-0 opacity-75">1x Misto quente</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">Pedido #3</h6>
+                        <p class="mb-0 opacity-75">1x Cappuccino</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center mt-4">
+                    <button type="button" class="btn btn-success px-4 py-2">Confirmar Pedido</button>
+                </div>
+                </div>
+              </div>
+        </div><!--container-->
+    </section><!--lista-pedidos-->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
