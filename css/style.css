@@ -67,7 +67,10 @@ p.descricao-projeto{
 .image{
     background-color: black;
     width: 60%;
-    height: 300px;
+}
+
+img{
+    width: 100%;
 }
 
 /*Conteudo principal - Pagina de Pedido*/
